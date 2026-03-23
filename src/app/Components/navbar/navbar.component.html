@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/tasks">
+      <div class="brand-icon">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect width="28" height="28" rx="8" fill="#e94560"/>
+          <path d="M7 14l4 4 10-10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="brand-text">_Task <span class="brand-accent">Flow</span></span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link px-3 py-2 rounded-pill"
+            routerLink="/tasks"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}">
+            <i class="bi bi-list-task me-1"></i> All Tasks
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-add px-3 py-2 rounded-pill ms-lg-2"
+            routerLink="/tasks/new"
+            routerLinkActive="active-add">
+            <i class="bi bi-plus-circle me-1"></i> New Task
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
