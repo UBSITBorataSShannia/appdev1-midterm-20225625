@@ -1,1 +1,104 @@
-<p>task-edit works!</p>
+<div *ngIf="!task" class="alert alert-danger">
+  <i class="bi bi-exclamation-triangle me-2"></i>Task not found.
+</div>
+
+<form *ngIf="task" (ngSubmit)="onSubmit()" #editForm="ngForm" novalidate>
+
+  <!-- Validation Alert -->
+  <div *ngIf="submitted && editForm.invalid" class="alert alert-warning mb-4">
+    <i class="bi bi-exclamation-triangle me-2"></i>
+    Please fill in all required fields before saving.
+  </div>
+
+  <!-- Success Alert -->
+  <div *ngIf="successMsg" class="alert alert-success mb-4">
+    <i class="bi bi-check-circle me-2"></i>{{ successMsg }}
+  </div>
+
+  <div class="row g-3">
+
+    <!-- Title -->
+    <div class="col-12">
+      <label class="form-label" for="editTitle">
+        Task Title <span class="text-danger">*</span>
+      </label>
+      <input
+        type="text"
+        id="editTitle"
+        class="form-control"
+        name="title"
+        [(ngModel)]="formData.title"
+        required
+        #title="ngModel"
+        [class.is-invalid]="submitted && title.invalid"
+        placeholder="Enter task title">
+      <div class="invalid-feedback">Title is required.</div>
+    </div>
+
+    <!-- Description -->
+    <div class="col-12">
+      <label class="form-label" for="editDesc">
+        Description <span class="text-danger">*</span>
+      </label>
+      <textarea
+        id="editDesc"
+        class="form-control"
+        name="description"
+        rows="4"
+        [(ngModel)]="formData.description"
+        required
+        #desc="ngModel"
+        [class.is-invalid]="submitted && desc.invalid"
+        placeholder="Describe the task..."></textarea>
+      <div class="invalid-feedback">Description is required.</div>
+    </div>
+
+    <!-- Due Date -->
+    <div class="col-md-4">
+      <label class="form-label" for="editDue">
+        Due Date <span class="text-danger">*</span>
+      </label>
+      <input
+        type="date"
+        id="editDue"
+        class="form-control"
+        name="dueDate"
+        [(ngModel)]="formData.dueDate"
+        required
+        #due="ngModel"
+        [class.is-invalid]="submitted && due.invalid">
+      <div class="invalid-feedback">Due date is required.</div>
+    </div>
+
+    <!-- Priority -->
+    <div class="col-md-4">
+      <label class="form-label" for="editPriority">Priority</label>
+      <select id="editPriority" class="form-select" name="priority" [(ngModel)]="formData.priority">
+        <option value="Low">🟢 Low</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="High">🔴 High</option>
+      </select>
+    </div>
+
+    <!-- Status -->
+    <div class="col-md-4">
+      <label class="form-label" for="editStatus">Status</label>
+      <select id="editStatus" class="form-select" name="status" [(ngModel)]="formData.status">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
+
+    <!-- Buttons -->
+    <div class="col-12 d-flex gap-2 flex-wrap pt-2 border-top mt-2">
+      <button type="submit" class="btn btn-save">
+        <i class="bi bi-check-lg me-2"></i>Save Changes
+      </button>
+      <button type="button" class="btn btn-outline-secondary" (click)="cancel()">
+        Cancel
+      </button>
+    </div>
+
+  </div>
+</form>

@@ -1,0 +1,37 @@
+.detail-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-bottom: 3px solid #e94560;
+}
+
+.task-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.tab-bar {
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tab-link {
+  color: #666;
+  font-weight: 600;
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  border-radius: 0 !important;
+  padding: 0.75rem 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.tab-link:hover {
+  color: #e94560;
+  background: transparent;
+  border-bottom-color: rgba(233, 69, 96, 0.3) !important;
+}
+
+.tab-active {
+  color: #e94560 !important;
+  border-bottom-color: #e94560 !important;
+  background: transparent !important;
+}

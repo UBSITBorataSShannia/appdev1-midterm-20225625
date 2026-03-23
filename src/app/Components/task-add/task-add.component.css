@@ -1,0 +1,101 @@
+.page-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.4px;
+}
+
+.back-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Card Header */
+.add-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  border-bottom: 3px solid #e94560;
+}
+
+.add-icon-wrap {
+  width: 44px;
+  height: 44px;
+  background: rgba(233, 69, 96, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Form Inputs */
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1.5px solid #dde2ec;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control-lg {
+  font-size: 1rem;
+  padding: 0.65rem 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #e94560;
+  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* Live Preview */
+.preview-box {
+  background: #f0f4ff;
+  border: 1.5px dashed #a8b8f0;
+}
+
+.preview-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #7a8bc4;
+}
+
+/* Submit Button */
+.btn-create {
+  background: linear-gradient(135deg, #e94560, #c73652);
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-create:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  color: white;
+  box-shadow: 0 6px 18px rgba(233, 69, 96, 0.4);
+}

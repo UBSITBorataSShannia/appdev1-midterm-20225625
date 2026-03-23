@@ -1,1 +1,64 @@
-<p>task-detail works!</p>
+<div class="container py-4">
+
+  <!-- Back Button -->
+  <a routerLink="/tasks" class="btn btn-sm btn-outline-secondary mb-3">
+    <i class="bi bi-arrow-left me-1"></i> Back to Tasks
+  </a>
+
+  <!-- Not Found Alert -->
+  <div *ngIf="!task" class="alert alert-danger d-flex align-items-center gap-2">
+    <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+    <div>
+      Task not found. The task ID may be invalid.
+      <a routerLink="/tasks" class="alert-link ms-2">Return to list →</a>
+    </div>
+  </div>
+
+  <!-- Task Card -->
+  <div *ngIf="task" class="card shadow border-0 overflow-hidden">
+
+    <!-- Card Header -->
+    <div class="detail-header p-4">
+      <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+        <div>
+          <h2 class="task-title text-white mb-1">{{ task.title }}</h2>
+          <small class="text-white-50">
+            <i class="bi bi-clock me-1"></i>Created {{ task.createdAt }}
+            &nbsp;·&nbsp;
+            <i class="bi bi-calendar-event me-1"></i>Due {{ task.dueDate }}
+          </small>
+        </div>
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="badge fs-6 px-3 py-2" [ngClass]="getPriorityClass(task.priority)">
+            {{ task.priority }} Priority
+          </span>
+          <span class="badge fs-6 px-3 py-2" [ngClass]="getStatusClass(task.status)">
+            {{ task.status }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav Tabs -->
+    <div class="tab-bar px-3 pt-2">
+      <ul class="nav nav-tabs border-0">
+        <li class="nav-item">
+          <a class="nav-link tab-link" [routerLink]="['info']" routerLinkActive="tab-active">
+            <i class="bi bi-info-circle me-1"></i>Info
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link tab-link" [routerLink]="['edit']" routerLinkActive="tab-active">
+            <i class="bi bi-pencil me-1"></i>Edit
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Child Route Content -->
+    <div class="card-body p-4">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
