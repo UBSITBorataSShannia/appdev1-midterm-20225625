@@ -6,7 +6,7 @@
 }
 
 .btn-add {
-  background: linear-gradient(135deg, #e94560, #c73652);
+  background: linear-gradient(135deg, #0bb7eb, #9936c7);
   color: white;
   border: none;
   padding: 0.55rem 1.3rem;
@@ -20,7 +20,7 @@
 
 .btn-add:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
+  box-shadow: 0 6px 16px rgba(11, 122, 212, 0.4);
   color: white;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .task-title-link:hover {
-  color: #e94560;
+  color: #45d6e9;
 }
 
 .status-toggle {

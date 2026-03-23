@@ -15,8 +15,8 @@
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #e94560;
-  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
+  border-color: #7e45e9;
+  box-shadow: 0 0 0 3px rgba(72, 69, 233, 0.12);
 }
 
 textarea.form-control {
@@ -25,7 +25,7 @@ textarea.form-control {
 }
 
 .btn-save {
-  background: linear-gradient(135deg, #e94560, #c73652);
+  background: linear-gradient(135deg, #45bbe9, #365dc7);
   color: white;
   border: none;
   font-weight: 700;
@@ -40,5 +40,5 @@ textarea.form-control {
   filter: brightness(1.1);
   transform: translateY(-1px);
   color: white;
-  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.35);
+  box-shadow: 0 4px 12px rgba(26, 34, 136, 0.35);
 }

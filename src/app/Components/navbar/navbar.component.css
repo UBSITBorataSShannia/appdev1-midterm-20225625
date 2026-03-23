@@ -1,6 +1,6 @@
 nav {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
-  border-bottom: 2px solid #e94560;
+  background: linear-gradient(135deg, #052b7e 0%, #052c68 50%, #0f3460 100%) !important;
+  border-bottom: 5px solid #1fc9e7;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -12,14 +12,14 @@ nav {
 
 .brand-text {
   font-family: 'Segoe UI', sans-serif;
-  font-weight: 800;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 2rem;
   letter-spacing: -0.5px;
   color: white;
 }
 
 .brand-accent {
-  color: #3550c7;
+  color: #35c2c7;
 }
 
 .nav-link {
@@ -36,7 +36,7 @@ nav {
 
 .active-link {
   color: #fff !important;
-  background: rgba(52, 85, 236, 0.25) !important;
+  background: rgba(0, 172, 252, 0.25) !important;
 }
 
 .nav-add {
@@ -45,11 +45,11 @@ nav {
 }
 
 .nav-add:hover {
-  background: #2b668d !important;
+  background: #0a9df3 !important;
   color: white !important;
 }
 
 .active-add {
-  background: #1c65d3 !important;
+  background: #1c9fd3 !important;
   color: white !important;
 }

@@ -1,6 +1,6 @@
 .detail-header {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  border-bottom: 3px solid #e94560;
+  border-bottom: 3px solid #0267ff;
 }
 
 .task-title {
@@ -25,13 +25,13 @@
 }
 
 .tab-link:hover {
-  color: #e94560;
+  color: #2676df;
   background: transparent;
-  border-bottom-color: rgba(233, 69, 96, 0.3) !important;
+  border-bottom-color: rgba(61, 167, 238, 0.3) !important;
 }
 
 .tab-active {
-  color: #e94560 !important;
-  border-bottom-color: #e94560 !important;
+  color: #2458c7 !important;
+  border-bottom-color: #1387d4 !important;
   background: transparent !important;
 }

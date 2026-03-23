@@ -19,13 +19,13 @@
 /* Card Header */
 .add-header {
   background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
-  border-bottom: 3px solid #e94560;
+  border-bottom: 5px solid #05c5ff;
 }
 
 .add-icon-wrap {
   width: 44px;
   height: 44px;
-  background: rgba(233, 69, 96, 0.3);
+  background: rgba(0, 101, 253, 0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #e94560;
+  border-color: #2a0dcf;
   box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
 }
 
@@ -81,7 +81,7 @@ textarea.form-control {
 
 /* Submit Button */
 .btn-create {
-  background: linear-gradient(135deg, #e94560, #c73652);
+  background: linear-gradient(135deg, #1385d1, #3907af);
   color: white;
   border: none;
   font-weight: 700;
@@ -97,5 +97,5 @@ textarea.form-control {
   filter: brightness(1.1);
   transform: translateY(-2px);
   color: white;
-  box-shadow: 0 6px 18px rgba(233, 69, 96, 0.4);
+  box-shadow: 0 6px 18px rgba(26, 143, 197, 0.4);
 }
