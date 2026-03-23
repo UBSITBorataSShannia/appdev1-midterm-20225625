@@ -1,1 +1,66 @@
-<p>task-info works!</p>
+<div *ngIf="task">
+  <div class="row g-4">
+
+    <!-- Description Column -->
+    <div class="col-md-8">
+      <p class="section-label">Description</p>
+      <p class="task-description">{{ task.description }}</p>
+    </div>
+
+    <!-- Details Column -->
+    <div class="col-md-4">
+      <div class="info-panel p-3 rounded-3">
+        <p class="section-label mb-3">Task Details</p>
+
+        <div class="info-row">
+          <span class="info-key">
+            <i class="bi bi-calendar-event text-danger me-2"></i>Due Date
+          </span>
+          <span class="info-val fw-semibold">{{ task.dueDate }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="info-key">
+            <i class="bi bi-flag text-warning me-2"></i>Priority
+          </span>
+          <span class="badge" [ngClass]="getPriorityClass(task.priority)">
+            {{ task.priority }}
+          </span>
+        </div>
+
+        <div class="info-row">
+          <span class="info-key">
+            <i class="bi bi-circle-half text-primary me-2"></i>Status
+          </span>
+          <span class="badge" [ngClass]="getStatusClass(task.status)">
+            {{ task.status }}
+          </span>
+        </div>
+
+        <div class="info-row">
+          <span class="info-key">
+            <i class="bi bi-clock-history text-secondary me-2"></i>Created
+          </span>
+          <span class="info-val">{{ task.createdAt }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="info-key">
+            <i class="bi bi-hash text-muted me-2"></i>Task ID
+          </span>
+          <span class="info-val text-muted">#{{ task.id }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="mt-4 pt-3 border-top d-flex gap-2 flex-wrap">
+    <a [routerLink]="['../edit']" class="btn btn-edit">
+      <i class="bi bi-pencil-square me-2"></i>Edit Task
+    </a>
+    <a routerLink="/tasks" class="btn btn-outline-secondary">
+      <i class="bi bi-list-task me-1"></i>All Tasks
+    </a>
+  </div>
+</div>

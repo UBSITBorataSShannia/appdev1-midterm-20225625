@@ -1,0 +1,62 @@
+.section-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #999;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.task-description {
+  color: #444;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.info-panel {
+  background: #f7f8fc;
+  border: 1px solid #e8eaf0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-key {
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.info-val {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #f7c948, #e6b800);
+  color: #1a1a2e;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.btn-edit:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  color: #1a1a2e;
+}

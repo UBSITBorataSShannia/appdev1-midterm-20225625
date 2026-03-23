@@ -1,0 +1,102 @@
+.page-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+.btn-add {
+  background: linear-gradient(135deg, #e94560, #c73652);
+  color: white;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
+  color: white;
+}
+
+.stat-card {
+  border-radius: 14px;
+  padding: 1.1rem 1.3rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+.stat-total    { background: #eef1ff; color: #1a1a2e; }
+.stat-pending  { background: #fff3e0; color: #bf360c; }
+.stat-progress { background: #e3f2fd; color: #01579b; }
+.stat-done     { background: #e8f5e9; color: #1b5e20; }
+
+.thead-dark-custom {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+}
+
+.thead-dark-custom th {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border: none;
+  padding: 1rem 0.75rem;
+}
+
+.row-num {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.task-title-link {
+  font-weight: 600;
+  color: #1a1a2e;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.task-title-link:hover {
+  color: #e94560;
+}
+
+.status-toggle {
+  cursor: pointer;
+  font-size: 0.78rem;
+  padding: 0.35em 0.7em;
+  transition: filter 0.15s;
+}
+
+.status-toggle:hover {
+  filter: brightness(0.88);
+}
+
+.empty-icon {
+  font-size: 4.5rem;
+}
